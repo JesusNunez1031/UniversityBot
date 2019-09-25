@@ -16,14 +16,16 @@ class QnABot extends ActivityHandler {
         }
 
         try {
-		var endpointHostName = process.env.QnAEndpointHostName
-		if(!endpointHostName.startsWith('https://')){
-		    endpointHostName =  'https://' + endpointHostName;
-		}
+            var endpointHostName = process.env.QnAEndpointHostName;
+            if (!endpointHostName.startsWith('https://')) {
+                // eslint-disable-next-line no-mixed-spaces-and-tabs,no-tabs
+		    endpointHostName = 'https://' + endpointHostName;
+            }
 
-		if(!endpointHostName.endsWith('/qnamaker')){
-		    endpointHostName =  endpointHostName + '/qnamaker';
-		}           this.qnaMaker = new QnAMaker({
+            if (!endpointHostName.endsWith('/qnamaker')) {
+                // eslint-disable-next-line no-mixed-spaces-and-tabs,no-tabs
+		    endpointHostName = endpointHostName + '/qnamaker';
+            } this.qnaMaker = new QnAMaker({
                 knowledgeBaseId: process.env.QnAKnowledgebaseId,
                 endpointKey: process.env.QnAAuthKey,
                 host: endpointHostName
@@ -38,7 +40,7 @@ class QnABot extends ActivityHandler {
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
-                    await context.sendActivity('Welcome to the QnA Maker sample! Ask me a question and I will try to answer it.');
+                    await context.sendActivity('Hey there! I am the Toro Bot, ask me a question and I will try to answer it.');
                 }
             }
 
@@ -58,7 +60,7 @@ class QnABot extends ActivityHandler {
 
             // If no answers were returned from QnA Maker, reply with help.
             } else {
-                await context.sendActivity('No QnA Maker answers were found.');
+                await context.sendActivity('No answers were found, sorry.');
             }
 
             // By calling next() you ensure that the next BotHandler is run.
