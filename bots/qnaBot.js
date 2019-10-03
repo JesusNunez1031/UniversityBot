@@ -1,8 +1,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-const { ActivityHandler } = require('botbuilder');
+const { ActivityHandler, CardFactory } = require('botbuilder');
 const { QnAMaker } = require('botbuilder-ai');
+const WelcomeCard = require('./services/WelcomeCard.json');
 
 class QnABot extends ActivityHandler {
     /**
@@ -40,7 +41,7 @@ class QnABot extends ActivityHandler {
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
-                    await context.sendActivity('Hey there! I am the Toro Bot, ask me a question and I will try to answer it.');
+                    await context.sendActivity({ attachments: [CardFactory.adaptiveCard(WelcomeCard)] });
                 }
             }
 

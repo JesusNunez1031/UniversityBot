@@ -1,0 +1,68 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Large",
+      "text": "CSUDH Bot",
+      "separator": true,
+      "horizontalAlignment": "Center",
+      "maxLines": 0,
+      "weight": "Bolder",
+      "color": "Dark"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Hey there! I am the CSUDH Bot, ask me any question and I will try to answer it.",
+      "wrap": true
+    },
+    {
+      "type": "Image",
+      "altText": "CSUDH_logo",
+      "url": "https://pbs.twimg.com/profile_images/905921694530846720/jcM6DK_o_400x400.jpg",
+      "separator": true,
+      "horizontalAlignment": "Center",
+      "selectAction": {
+        "type": "Action.OpenUrl",
+        "id": "Site",
+        "title": "HomePage",
+        "url": "https://www.csudh.edu/"
+      }
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "General FAQ",
+          "url": "https://www.csudh.edu/uac/frequently-asked-questions/",
+          "id": "UAC"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "Financial Aid",
+          "url": "https://www.csudh.edu/financial-aid/",
+          "id": "FinancialAid"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "Scholarships",
+          "url": "https://www.csudh.edu/financial-aid/scholarships/",
+          "id": "Schlr"
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
