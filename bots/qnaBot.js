@@ -5,6 +5,8 @@ const { ActivityHandler, CardFactory } = require('botbuilder');
 const { QnAMaker } = require('botbuilder-ai');
 const WelcomeCard = require('./services/WelcomeCard.json');
 const CADreamAct = require('./services/CADreamAct.json');
+const FinAidCard = require('./services/FinancialAid.json');
+
 
 class QnABot extends ActivityHandler {
     /**
@@ -56,17 +58,22 @@ class QnABot extends ActivityHandler {
 
             const qnaResults = await this.qnaMaker.getAnswers(context);
 
-            if( qnaResults[0].answer === 'Above you can see information regarding the California Dream Act.')
-            {
+            if( qnaResults[0].answer === 'Above you can see information regarding the California Dream Act.') {
                 await context.sendActivity({attachments: [CardFactory.adaptiveCard(CADreamAct)]});
             }
+          
+            if (qnaResults[0].answer === 'Here are the steps to applying for Financial Aid:') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(FinAidCard)] });
+            }
+          
             // If an answer was received from QnA Maker, send the answer back to the user.
             if (qnaResults[0]) {
                 await context.sendActivity(qnaResults[0].answer);
-
+                // eslint-disable-next-line brace-style
+            }
             // If no answers were returned from QnA Maker, reply with help.
-            } else {
-                await context.sendActivity('No answers were found, sorry.');
+            else {
+                await context.sendActivity('Sorry, no answers were found for your question, please try again.');
             }
 
             // By calling next() you ensure that the next BotHandler is run.

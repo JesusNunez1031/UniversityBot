@@ -1,0 +1,187 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Steps to Apply for Financial Aid",
+      "weight": "Bolder",
+      "size": "Medium",
+      "separator": true,
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Step 1",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "File a 2019-2020 Free Application for Federal Aid [(FAFSA)](https://studentaid.ed.gov/sa/fafsa) ",
+                "horizontalAlignment": "Left"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Step 2",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "You will receive various notifications",
+                "horizontalAlignment": "Center",
+                "size": "Medium",
+                "weight": "Bolder"
+              },
+              {
+                "type": "TextBlock",
+                "text": "**Financial Aid:** Once we have received your FAFSA information, you will receive an acknowledgement letter from our office.",
+                "wrap": true
+              },
+              {
+                "type": "TextBlock",
+                "text": "**Federal Processor:** Once you've submitted your FAFSA, you'll receive an email notification containing a link to your Student Aid Report (SAR). You'll need to make corrections on your SAR online using your FSA ID at the FAFSA website or request a paper SAR. If you submitted your FAFSA online without an email address, you'll receive a paper SAR Acknowledgement.",
+                "wrap": true
+              },
+              {
+                "type": "TextBlock",
+                "text": "**California Student Aid Commission:** If you are selected to receive a Cal Grant, you will be sent a California Aid Report (CAR) by the California Student Aid Commission. Students must follow the printed instructions on the CAR.",
+                "wrap": true
+              },
+              {
+                "type": "TextBlock",
+                "text": "**Note:** You may be randomly selected by the Federal Government for a verification process. In this event, we will send you a notification.",
+                "wrap": true
+              }
+            ],
+            "verticalContentAlignment": "Center"
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Step 3",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "You are awarded financial aid",
+                "horizontalAlignment": "Center",
+                "size": "Medium",
+                "weight": "Bolder"
+              },
+              {
+                "type": "TextBlock",
+                "text": "You will receive a letter from our office as well as an email notification of your financial aid award and amount. Or, you also may check your financial aid award status online at [my.CSUDH.edu](https://my.csudh.edu/psp/paaprd/EMPLOYEE/EMPL/h/?tab=PAPP_GUEST)",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Step 4",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "Accept or decline your financial aid award",
+                "horizontalAlignment": "Center",
+                "weight": "Bolder",
+                "size": "Medium"
+              },
+              {
+                "type": "TextBlock",
+                "text": "If you are awarded financial aid, you must accept or decline financial aid online at [my.CSUDH.edu](https://my.csudh.edu/psp/paaprd/EMPLOYEE/EMPL/h/?tab=PAPP_GUEST). Be sure to read our [Financial Aid Award Guide](https://www.csudh.edu/Assets/csudh-sites/financial-aid/docs/2018_2019_financial_aid_forms/2018_2019_award_letter_guide.pdf), which contains pertinent information about the offer as well as explains your rights and responsibilities as a financial aid recipient. Financial aid is intended to be used to pay educational expenses.",
+                "wrap": true
+              },
+              {
+                "type": "TextBlock",
+                "text": "You will have 15 days to accept/decline your awards. Failure to respond will result in cancellation of your awards.",
+                "wrap": true,
+                "weight": "Bolder"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Requirements for Student Loans",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "Complete additional online requirements for your student loan",
+                "wrap": true,
+                "weight": "Bolder",
+                "horizontalAlignment": "Center"
+              },
+              {
+                "type": "TextBlock",
+                "text": "If you are offered a student loan, you must complete additional requirements to receive the loan. You are required to:",
+                "wrap": true
+              },
+              {
+                "type": "TextBlock",
+                "text": "**1.** Complete an online entrance counseling at [StudentLoans.gov](https://studentloans.gov/myDirectLoan/index.action)",
+                "wrap": true
+              },
+              {
+                "type": "TextBlock",
+                "text": "**2.** Complete an online Master Promissory Note committing student to repay the loan. Complete the promissory note online at [StudentLoans.gov](https://studentloans.gov/myDirectLoan/index.action)",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "If all steps are completed, your refund will be sent to you",
+      "horizontalAlignment": "Center",
+      "weight": "Bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Prior to the first day of the semester, financial aid refunds (minus registration and housing fees) are processed by Student Financial Services for students who have completed steps 1-5 above. Students have the option of selecting to receive their refund either by Direct Deposit or receiving a paper check by mail. Information on setting up Direct Deposit can be found [here](https://www.csudh.edu/accounting-services/student-financial-services/direct-deposit/)",
+      "wrap": true
+    }
+  ],
+  "verticalContentAlignment": "Center"
+}
