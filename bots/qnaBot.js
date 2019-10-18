@@ -4,6 +4,7 @@
 const { ActivityHandler, CardFactory } = require('botbuilder');
 const { QnAMaker } = require('botbuilder-ai');
 const WelcomeCard = require('./services/WelcomeCard.json');
+const CADreamAct = require('./services/CADreamAct.json');
 
 class QnABot extends ActivityHandler {
     /**
@@ -55,6 +56,10 @@ class QnABot extends ActivityHandler {
 
             const qnaResults = await this.qnaMaker.getAnswers(context);
 
+            if( qnaResults[0].answer === 'Above you can see information regarding the California Dream Act.')
+            {
+                await context.sendActivity({attachments: [CardFactory.adaptiveCard(CADreamAct)]});
+            }
             // If an answer was received from QnA Maker, send the answer back to the user.
             if (qnaResults[0]) {
                 await context.sendActivity(qnaResults[0].answer);
