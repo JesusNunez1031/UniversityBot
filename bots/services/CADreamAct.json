@@ -1,0 +1,88 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "California Dream Act",
+      "weight": "Bolder",
+      "size": "Large",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ActionSet",
+          "actions": [
+            {
+              "type": "Action.ShowCard",
+              "title": "What are AB540 Requirements?",
+              "card": {
+                "type": "AdaptiveCard",
+                "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                "fallbackText": "",
+                "selectAction": {
+                  "type": "Action.ToggleVisibility",
+                  "targetElements": [],
+                  "title": ""
+                },
+                "speak": "",
+                "body": [
+                  {
+                    "type": "TextBlock",
+                    "text": "ALL of the following requirements must be met:    \n\n- The student must have attended a high school (public or private) in California for three or more years\n\n- The student must have graduated from a California high school or attained the equivalent prior to the start of the term (for example: passed the GED or California High School Proficiency exam)\n\n- A student who is without lawful immigration status must file an AB540 Affidavit (California Non-Resident Tuition Exemption Request form) with the college or university stating that he or she has filed an application to legalize his or her immigration status, or will file an application as soon as he or she is eligible to do so.\n    Complete and submit the affidavit to the Admissions & Records Office, located in Welch Hall, Room C-290.\n\nFor required documentation and deadlines, [click here](https://www.csudh.edu/future-students/apply/freshmen/residency-info/residency-form-instructions/)\n\nFor California Non-Resident Tuition Exemption Request form, [click here](https://www.csudh.edu/Assets/csudh-sites/financial-aid/docs/2019_2020_financial_aid_forms/ca-nonresident-tuition-exemption-2019.pdf)",
+                    "horizontalAlignment": "Left",
+                    "wrap": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "ActionSet",
+          "actions": [
+            {
+              "type": "Action.ShowCard",
+              "title": "What assistance is available to AB540 students?",
+              "card": {
+                "type": "AdaptiveCard",
+                "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                "body": [
+                  {
+                    "type": "TextBlock",
+                    "text": "**AB130 (Scholarships)**\n\nAB130 allows students who qualify under AB540 to apply for non-state funded scholarships. This law took effect on January 1, 2012. For more information on scholarships available to students visit the CSUDH scholarship page.\n\n**AB131 (Grants)**\n\nAB 131 allows students who qualify under the AB540 to apply for and receive state-funded financial aid such as institutional grants, community college fee waivers, Cal Grant, and Chafee Grant. This law took effect on January 1, 2013.\n\nStudents may be selected for institutional verification of their application data. This will require the student to submit verification documents, such as information on household size, number in college, income verification, selective service verification for males, etc.\n\n**Assembly Bill (AB) 2000 and Dream Act Application**\n\nBeginning January 1, 2015, AB 2000 amended the school attendance requirement of AB 540 and designated that if a student has not attended a California high school for at least three years, that portion of the eligibility criteria may be replaced by the following:\n\n- Attainment of three (3) years' worth of high school credits from a California high school (equivalent to 3 or more years of full-time high school coursework); and\n\n- A total of three (3) or more years of attendance in California elementary or secondary schools, or a combination of those schools (the years do not have to be sequential)\n\n**Senate Bill (SB) 68 - Expanding Assembly Bill (AB) 540**\n\nBeginning January 1, 2018, SB 68 further expanded the school attendance requirement, giving more students the ability to apply for financial aid through the California Dream Act Application. Students are now able to attain the requirement of three (3) or more years of credits or full-time attendance at these additional institutions based on unit completion or class hours per year:\n\nCalifornia adult schools established by any of the following entities:\n- A county office of education\n- A unified school district or high school district\n- The Department of Corrections and Rehabilitation\n\nCampuses of the California Community Colleges\n\nStudents who don’t graduate from a California high school may also:\n\n- Attain an associate degree from a campus of the California Community Colleges\n\nOR\n\n- Fulfill the minimum transfer requirements established for the University of California (UC) or the California State University (CSU) when transferring from a campus of the California Community Colleges\n\nThe California Dream Act Application is for:\n\n- Undocumented students who meet AB 540/AB 2000/SB 68 criteria\n- U visa holders\n- AB 540 eligible students who hold a Social Security Card obtained through Deferred Action for Childhood Arrivals (DACA); DACA holders are not eligible noncitizens\n\nAB 540 undocumented students should fill out only one application, the California Dream Act Application, and not the Free Application for Federal Student Aid (FAFSA).",
+                    "wrap": true
+                  }
+                ]
+              },
+              "id": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "How do I apply?",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "2019 – 2020 Funding: Priority Application Filing period is TBD.\n\nThe online new Dream Application for the 2019 – 2020 Academic year will be available beginning October, 2018 at the [California Student Aid Commission website](https://www.csac.ca.gov/post/resources-california-dream-act-application).\n\nIf you are a returning student [click here](https://dream.csac.ca.gov/security/ApplicantLogin.aspx) to renew your Dream Act Application for 2019-2020.\n\nStudents who wish to apply for the Cal Grant programs in addition to SUG and EOP Grants should apply between during the priority application filing period.\n\n_*State applications with deadlines that fall on a Saturday, Sunday, or holiday will be accepted on the next business day._",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
