@@ -9,7 +9,7 @@
       "horizontalAlignment": "Center",
       "maxLines": 0,
       "weight": "Bolder",
-      "color": "Dark"
+      "color": "Light"
     },
     {
       "type": "TextBlock",
