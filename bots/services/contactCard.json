@@ -313,7 +313,14 @@
                     "title": "University Advisement Center",
                     "card": {
                       "type": "AdaptiveCard",
-                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "_Undeclared majors, special admits, and students on ASAP probation_ \n\n\nWelch Hall (WH), A220 \n\nPhone: (310) 243-3538\n\nEmail: uac@csudh.edu\n\n[Click here for website](https://www.csudh.edu/uac/)",
+                          "wrap": true
+                        }
+                      ]
                     }
                   }
                 ]
