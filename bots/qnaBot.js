@@ -6,6 +6,7 @@ const { QnAMaker } = require('botbuilder-ai');
 const WelcomeCard = require('./services/WelcomeCard.json');
 const CADreamAct = require('./services/CADreamAct.json');
 const FinAidCard = require('./services/FinancialAid.json');
+const contactCard = require('./services/contactCard.json');
 
 
 class QnABot extends ActivityHandler {
@@ -64,6 +65,10 @@ class QnABot extends ActivityHandler {
           
             if (qnaResults[0].answer === 'Here are the steps to applying for Financial Aid:') {
                 await context.sendActivity({ attachments: [CardFactory.adaptiveCard(FinAidCard)] });
+            }
+
+            if (qnaResults[0].answer === 'Above you can see information for contacting various school departments.') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(contactCard)] });
             }
           
             // If an answer was received from QnA Maker, send the answer back to the user.

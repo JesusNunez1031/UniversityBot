@@ -1,0 +1,504 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "General Contact Information",
+          "size": "Medium",
+          "weight": "Bolder",
+          "horizontalAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "General Contacts",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "General Campus Information",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "CSUDH University Outreach and Information Services \n\nWelch Hall (WH), A240 \n\nPhone numbers:\n- General info: (310) 243-3696\n- Outreach: (310) 243-3422\nEmail: info@csudh.edu\n\n[Click here for website](https://www.csudh.edu/future-students/more-info/)",
+                          "wrap": true
+                        },
+                        {
+                          "type": "RichTextBlock",
+                          "inlines": [
+                            {
+                              "type": "TextRun",
+                              "text": "New RichTextBlock"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Academic Affairs",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Welch Hall (WH), D440\n\nPhone: (310) 243-3307 or (310) 243-3309\n\nFax: (310) 217-6941\n\n[Click here for Website](https://www.csudh.edu/academic-affairs/)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Bookstore",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Phone: (310) 243-3829\n\nFax: (310) 327-0329\n\nEmail: csu_domhills@fheg.follett.com\n\n[Click here for Website](https://www.bkstr.com/csudominguezhillsstore/home/en)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Educational Opportunity Program (EOP)",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Welch Hall (WH), D350\n\nPhone: (310) 243-2563\n\nEmail: eop@csudh.edu\n\n[Click here for Website](https://www.csudh.edu/eop/)\n\nContact: Sean James, Associate Director\n\n_(Students interested in applying to the EOP program should check with the EOP office on campus to confirm the admission deadline for each semester.)_",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Financial Aid",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Welch Hall (WH), B250\n\nPhone: (310) 243-3691\n\nEmail: finaid@csudh.edu\n\n[Click here for Website](https://www.csudh.edu/financial-aid/)\n\nContact: Delores Lee, Director of Financial Aid Office",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Graduate Studies",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Welch Hall (WH), D445\n\nPhone: (310) 243-3756\n\nFax: (310) 516-4410\n\nEmail: bbaltazar6@csudh.edu\n\n[Click here for Website](https://www.csudh.edu/gsr/)\n\nAdministration: Bacilisa Baltazar, Administrative Analyst",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Housing",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "University Housing, Building A\n\nPhone: (310) 243-2228\n\nFax: (310) 516-4275 \n\nEmail: housing@csudh.edu\n[Click here for Website](https://www.csudh.edu/housing/)\n\nAdministration: Lynn Arthur, Director",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "International Student Information",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "International Student Services\n\nExtended Education Building (EE), Room 1300\n\nPhone: (310) 243-3737\n\nFax: (310) 516-4423\n\nEmail: iss@csudh.edu\n\n[Click here for Website](https://www.csudh.edu/ceie-intl/intl-student-info/)"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "President Thomas A. Parham",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Office of the President\n\nWelch Hall (WH), D450\n\nPhone: (310) 243-3301\n\n[Click here for Website](https://www.csudh.edu/president/)"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Student Affairs",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Welch Hall (WH), A410\n\nPhone: (310) 243-3784\n\nFax: (310) 516-3525\n\nEmail: studentadmin@csudh.edu\n\n[Click here forWebsite](https://www.csudh.edu/student-affairs/)\n\nAdministration: Dr. William Franklin, Vice President for Student Affairs",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Student Health and Psychological Services",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Student Health Center (SHC)\n\nPhone – Student Health: (310) 243-3629\n\nPhone – Psychological Services: (310) 243-3818\n\nFax: (310) 217-6990\n\nEmail: healthcenter@csudh.edu\n\n[Click here for Website](https://www.csudh.edu/shps)\n\nContact: Janie MacHarg, Ph.D.",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "University Communications and Public Affairs",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Welch Hall (WH), C400\n\nPhone: (310) 243-2001\n\nEmail: ucpa@csudh.edu\n\n[Click here for]Website(https://www.csudh.edu/ucpa)"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "University Parking and Transportation Services",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Small College Complex (SCC), Room 200\n\nPhone: (310) 243-3725\n\nEmergency: 9-1-1 or x 3333 (on campus) or call boxes\n\nEmail: cvelez@csudh.edu\n[Click here for Website](https://www.csudh.edu/dhpd/)\n\nAdministration: Carlos Velez, Chief of Police",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Academic Services",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "University Advisement Center",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Toro Learning and Testing Center",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "_Programs and services for currently enrolled CSUDH students_\n\nNorth Library:\n\n- Learning Center - Room C-121\n- Testing Center - Room 5705\n\nPhone numbers:\n- Learning Center: (310) 243-3827\n- Testing Center: (310) 243-3909\n\nEmail: tlc@csudh.edu\n\n[Click here for Website](https://www.csudh.edu/tltc/learning-center/)"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Student Disability Resource Center",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "_Assists students with disabilities in the enhancement of their academic, career, and personal development_\n\nWelch Hall (WH), D180\n\nPhone: (310) 243-3660\n\nFax: (310) 516-4247\n\nEmail: dss@csudh.edu\n\n[Click here for Website](https://www.csudh.edu/sdrc)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Encounter to Excellence",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "_Incoming freshman_\n\nSmall College Complex (SCC), Building 11, Room 1102\n\nPhone: (310) 243-2213\n\nEmail: eteprogram@csudh.edu\n\n[Click here for Website](http://www.csudh.edu/title-v-ete/)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "International Student Services",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "_International students_\n\nExtended Education Building (EE), Room 1300\n\nPhone: (310) 243-3737\n\nEmail: iss@csudh.edu\n\n[Click here for Website](https://www.csudh.edu/future-students/apply/international/)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "College of Health and Student Services",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Welch Hall (WH), C300\n\nPhone: (310) 243-2120 or (800) 344-5484-option #1 \n\nEmail: hhsnssc@csudh.edu\n\n[Click here for Website](https://www.csudh.edu/chhsn/ssc/)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Veterans Resources Center",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "_Assists veterans and their dependents in reaching their educational and career goals_\n\nLibrary South, Room 3941\n\nPhone: (310) 243-2829\n\nEmail: vrc@csudh.edu or vsp@csudh.edu\n\n[Click here for Website](http://www.csudh.edu/vrc/)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Admissions",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "School Code required on your FAFSA\n(Free Application for Federal Student Aid): 001141 \n\nAdmissions and Records\n\nWelch Hall (WH), C290\n\nPhone: (310) 243-3645\n\nAdmission status: Go to My.CSUDH.edu\n\nFax: (310) 516-3609\n\nEmail: admit@csudh.edu\n\n[Click here for Website](http://www.csudh.edu/records-registration/)",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Emergency",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "University Police\n\nWelch Hall (WH), B100\n\nPhone numbers:\n\n- Non-emergency: (310) 243-3639\n- Fax: (310) 516-4259\n\nEmergency: 9-1-1 or (310) 243-3333 (extention 3333 from offices) or Call Boxes\n[Click here for Website](http://www.csudh.edu/dhpd/)\n\nAdministration: Carlos Velez, Chief of Police\n\n\n_Emergency Preparedness and Procedures\nVisit the CSUDH Police Department website for more information about CSUDH procedures in case of power failure, security incident, bomb threat, earthquake, elevator, fire, fire evacuation, medical emergency, hazardous material spill, or classroom emergency. Information includes an evacuation map and emergency operations hierarchy._",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "actions": [
+    {
+      "type": "Action.ShowCard",
+      "title": "Athletics",
+      "card": {
+        "type": "AdaptiveCard",
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "Department of Athletics\n\nSouth Academy Complex (SAC), SAC 3100\n\nPhone: (310) 243-3893\n\nFax: (310) 243-2152\n\nEmail: athletics@csudh.edu\n\n[Click here for Website](http://www.gotoros.com/)\n\nAdministration: Jeff Falkner, Athletic Director",
+            "wrap": true
+          }
+        ]
+      }
+    }
+  ]
+}
