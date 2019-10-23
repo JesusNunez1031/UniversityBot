@@ -8,18 +8,12 @@
       "separator": true,
       "horizontalAlignment": "Center",
       "maxLines": 0,
-      "weight": "Bolder",
-      "color": "Light"
-    },
-    {
-      "type": "TextBlock",
-      "text": "Hey there! I am the CSUDH Bot, ask me any question and I will try to answer it.",
-      "wrap": true
+      "weight": "Bolder"
     },
     {
       "type": "Image",
       "altText": "CSUDH_logo",
-      "url": "https://pbs.twimg.com/profile_images/905921694530846720/jcM6DK_o_400x400.jpg",
+      "url": "https://www.csudh.edu/Assets/csudh-sites/brand/images/2018-06-18-csudh-logo-stacked-1-line-on-burgundy.png",
       "separator": true,
       "horizontalAlignment": "Center",
       "selectAction": {
@@ -28,6 +22,40 @@
         "title": "HomePage",
         "url": "https://www.csudh.edu/"
       }
+    },
+    {
+      "type": "TextBlock",
+      "text": "Hey there! I am the CSUDH Bot, ask me any question and I will try to answer it as best as I can!",
+      "wrap": true,
+      "weight": "Bolder",
+      "size": "Medium",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Campus Map",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "Image",
+                "altText": "campusMap",
+                "url": "https://www.csudh.edu/Assets/csudh-sites/campus-map-direction/images/csudh-campus-map-201908.png",
+                "selectAction": {
+                  "type": "Action.OpenUrl",
+                  "url": "https://www.csudh.edu/Assets/csudh-sites/campus-map-direction/docs/csudh-campus-map-201908.pdf",
+                  "title": "CSUDH Map"
+                }
+              }
+            ]
+          },
+          "style": "positive"
+        }
+      ]
     },
     {
       "type": "ActionSet",
@@ -64,5 +92,6 @@
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-  "version": "1.0"
+  "version": "1.0",
+  "verticalContentAlignment": "Center"
 }

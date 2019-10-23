@@ -8,7 +8,6 @@ const CADreamAct = require('./services/CADreamAct.json');
 const FinAidCard = require('./services/FinancialAid.json');
 const contactCard = require('./services/contactCard.json');
 
-
 class QnABot extends ActivityHandler {
     /**
      * @param {any} logger object for logging events, defaults to console if none is provided
@@ -59,10 +58,10 @@ class QnABot extends ActivityHandler {
 
             const qnaResults = await this.qnaMaker.getAnswers(context);
 
-            if( qnaResults[0].answer === 'Above you can see information regarding the California Dream Act.') {
-                await context.sendActivity({attachments: [CardFactory.adaptiveCard(CADreamAct)]});
+            if (qnaResults[0].answer === 'Above you can see information regarding the California Dream Act.') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(CADreamAct)] });
             }
-          
+
             if (qnaResults[0].answer === 'Here are the steps to applying for Financial Aid:') {
                 await context.sendActivity({ attachments: [CardFactory.adaptiveCard(FinAidCard)] });
             }
@@ -70,7 +69,6 @@ class QnABot extends ActivityHandler {
             if (qnaResults[0].answer === 'Above you can see information for contacting various school departments.') {
                 await context.sendActivity({ attachments: [CardFactory.adaptiveCard(contactCard)] });
             }
-          
             // If an answer was received from QnA Maker, send the answer back to the user.
             if (qnaResults[0]) {
                 await context.sendActivity(qnaResults[0].answer);
