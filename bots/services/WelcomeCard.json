@@ -61,6 +61,72 @@
       "type": "ActionSet",
       "actions": [
         {
+          "type": "Action.ShowCard",
+          "title": "Campus Calender",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "Loker Student Union and Student Life Calender",
+                    "url": "http://ems.csudh.edu/mastercalendar/MasterCalendar.aspx"
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "Academic Calander",
+                    "url": "https://www.csudh.edu/academic-affairs/academic-calendar/"
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "University Theatre and Dance Programs",
+                    "url": "https://www.csudh.edu/theatre-arts/program-productions/"
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "University Art Gallery Schedule of Events",
+                    "url": "https://gallery.csudh.edu/"
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "Toro Athletics",
+                    "url": "https://gotoros.com/calendar.aspx?vtype=list&preset=current"
+                  }
+                ]
+              }
+            ]
+          },
+          "style": "positive"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
           "type": "Action.OpenUrl",
           "title": "General FAQ",
           "url": "https://www.csudh.edu/uac/frequently-asked-questions/",
@@ -87,6 +153,17 @@
           "title": "Scholarships",
           "url": "https://www.csudh.edu/financial-aid/scholarships/",
           "id": "Schlr"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "Apply to CSUDH",
+          "style": "destructive",
+          "url": "https://www.csudh.edu/future-students/apply/"
         }
       ]
     }
