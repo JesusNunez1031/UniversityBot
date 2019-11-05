@@ -1,0 +1,82 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Programs Learning Outcomes",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "BS in Computer Science (BSCS)",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Graduates of the program will have an ability to:\n\n-    Analyze a complex computing problem and to apply principles of computing and other relevant disciplines to identify solutions. [CSC 401]\n-    Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline. [CSC 123]\n-    Communicate effectively in a variety of professional contexts. [CSC 492]\n-    Recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles. [CSC 301]\n -   Function effectively as a member or leader of a team engaged in activities appropriate to the program’s discipline. [CSC 481]\n-    Apply computer science theory and software development fundamentals to produce computing-based solutions. [CSC 311]\n",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "BA in Computer Technology",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "At the conclusion of the BA in Computer Technology Program, the student will demonstrate the ability to:\n\n-    Analyze, design, implement, and evaluate a Technology related solution to work related situations such as area or electronics, Manufacturing, Homeland Security, etc. using appropriate tools.\n-    Work effectively as a team member in design, implementation, and use of software and hardware utilization.\n-    Communicate effectively through speaking, writing, and the use of presentation tools in describing the hardware and software specification.\n-    Appraise the impact of ethical issues and societal concerns about constant changes in hardware/software computer technology.\n",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "MS in Computer Science (MSCS)",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "At the conclusion of the MS in Computer Science Program, the student will demonstrate the ability to:\n\n-    Apply theory of computation and advanced level concepts of programming\n    languages to industrial and other large scale projects.\n-    Use Computer Science research methods including design of efficient algorithms approaches to create and evaluate projects and generate reports.\n- Use the software engineering process to develop software that matches the operating system to customer requirements.\n-    Successfully manage a software project from planning through implementation to evaluation and improvement.\n\nIn addition to the above, the student with a focus on networking will demonstrate mastery over:\n\n-    Hardware interface management between and among parallel and distributed systems, specifically as it pertains to connectivity and security.\n\nIn addition to the above, the student with a focus on software engineering will demonstrate mastery in:\n\n- Design and analysis techniques used to structure and implement industry level applications\n    Use of testing and measurement models to examine end product quality.\n",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

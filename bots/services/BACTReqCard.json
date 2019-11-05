@@ -1,0 +1,174 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Core Requirements",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Upper Division Requirements",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Total of 15 units:\n\n- CSC 301 Computer and Society (3)\n- CTC 310 Software Project Management (3)\n- CTC 316 O/S and Networking Support (3)\n- CTC 452 Network Security and Hacking Prevention (3)\n- CTC 492 Senior Project (3)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Lower Division Requirements",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Total of 19 units:\n\n- CSC 101 Introduction to Computer Education (3)\n- CSC 111 Introduction to Computers and Basic (3)\n- CSC 116 Introduction to Computer Hardware and Tools (3)\n- CSC 255 Introduction to Dynamic Web Programming (3)\n- MAT 131 Elementary Statistics and Probability (3)\n- MAT 153 College Algebra and Trigonometry (4)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Track Requirements",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Homeland Security",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Total of 31 units:\n\n- CSC 115 Introduction to Programming Concepts (3)\n- CSC 121 CSI Computer Programming (4)\n- CSC 123 CSII Computer Programming II (4)\n- CSC 221 Assembly Lang. Comp. Org. (3)\n- CTC 218 Digital Logic Design (3)\n- CTC 228 Intro to O/S and NW (4)\n- CTC 328 PC Forensic (4)\n- CTC 362 Communication System Security (3)\n- CTC 428 OS Security (3)"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "General Track",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "- CSC 115 Introduction to Programming Concepts (3)\n- CSC 121 CSI Computer Programming (4)\n- CTC 218 Digital Logic Design (3)\n- CTC Elec. Lower Level (4)\n- CTC Elec. Lower Level (4)\n- CTC Elec. Lower Level (4)\n- CTC Elec. Upper Level (4)\n- CTC Elec. Upper Level (3)\n- CTC Elec. Upper Level (3)"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Professional",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "1. Associate Degree -or-\n2. Minor in another program -or-\n3. Concentration Courses – with consultation of the Computer Science Department",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Upper Level Free units",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "Upper Level Free Units (3-6 Units)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "General Education Requirements",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "See the “General Education” requirements in the University Catalog or the Class Schedule for the most current information on General Education requirements and course offerings.",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
