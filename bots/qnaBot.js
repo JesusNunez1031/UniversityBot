@@ -7,6 +7,8 @@ const WelcomeCard = require('./services/WelcomeCard.json');
 const CADreamAct = require('./services/CADreamAct.json');
 const FinAidCard = require('./services/FinancialAid.json');
 const contactCard = require('./services/contactCard.json');
+const Colleges = require('./services/Colleges.json');
+const DisabilityCard = require('./services/DisabilityCard.json');
 const csPloCard = require('./services/csPloCard.json');
 const BSCSReqCard = require('./services/BSCSReqCard.json');
 const BACTReqCard = require('./services/BACTReqCard.json');
@@ -74,6 +76,12 @@ class QnABot extends ActivityHandler {
             if (qnaResults[0].answer === 'Above you can see information for contacting various school departments.') {
                 await context.sendActivity({ attachments: [CardFactory.adaptiveCard(contactCard)] });
             }
+            if (qnaResults[0].answer === 'Above are links to the different colleges that make up csudh') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(Colleges)] });
+            }
+            if (qnaResults[0].answer === 'Above you will find information on the resources available at CSUDH for students with disabilities.') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(DisabilityCard)] });
+            }
 
             if (qnaResults[0].answer === 'Above you can see more information regarding the PLO of the different programs') {
                 await context.sendActivity({ attachments: [CardFactory.adaptiveCard(csPloCard)] });
@@ -93,7 +101,7 @@ class QnABot extends ActivityHandler {
 
             if (qnaResults[0].answer === 'Above you can see more information regarding the computer labs available in CSUDH') {
                 await context.sendActivity({ attachments: [CardFactory.adaptiveCard(CompLabsCard)] });
-                }
+            }
             // If an answer was received from QnA Maker, send the answer back to the user.
             if (qnaResults[0]) {
                 await context.sendActivity(qnaResults[0].answer);

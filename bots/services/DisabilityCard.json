@@ -1,0 +1,120 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "weight": "Bolder",
+      "text": "Student Disability Resource Center",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Image",
+              "altText": "",
+              "url": "https://www.csudh.edu/Assets/csudh-sites/sdrc/images/sdrc-logo-cropped.png",
+              "size": "Stretch"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Contact us:\n\n**Phone:** (310)243-3660\n\n**Email:** dss@csudh.edu",
+              "wrap": true
+            }
+          ],
+          "verticalContentAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "The **Student disAbility Resource Center** is focused on making sure CSUDH students with disabilities have full access to the university’s educational, cultural, social, and physical facilities and programs. We provide a centralized source for information for students with disabilities as well as faculty and staff who work with them.",
+      "wrap": true
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Getting Started",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "Register with the SdRC via Online Portal",
+                "weight": "Bolder",
+                "size": "Medium"
+              },
+              {
+                "type": "TextBlock",
+                "text": "**Step 1:** Application\n\n**Step 2:** Verification of Disability\n\n_**Note: Prior to submitting an application, please have medical and/or disability documentation available at the time of completing application, preferably an electronic format.**_\n\n1. On the left-side menu (or expandable menu or mobile devices), click on **SdRC Online Portal**. You can also open the Online Portal in a new tab by clicking [here](https://hood.accessiblelearning.com/s-csudh/)\n\n2. Click the button labeled \"New Student Application\" for new student registration\n\n3. On the first step, please fill out the application in its entirety and click “Submit Application.”\n4a. If you are scheduled for an appointment with William Hoanzl for LD Appointment, please fill out questions 2-24 to the best of your ability.\n\n4. On the second step, please upload sufficient updated medical documentation. Once you upload and submit your documentation via the “Upload Documentation” button, it will provide a notice with a green check mark stating that your “File Upload was Successful.” 5a. If you do not have the documentation at the time, you may click the “Upload Documentation Later” button and upload it later upon email confirmation.\n\n5. Once your application is submitted, you will receive an email notification.",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "What's Next",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "Completed Application Packet",
+                "size": "Medium",
+                "weight": "Bolder"
+              },
+              {
+                "type": "TextBlock",
+                "text": "- Online Application\n- Medical/Verification of disability documentation"
+              },
+              {
+                "type": "TextBlock",
+                "text": "Follow-Up Email from SdRC",
+                "weight": "Bolder",
+                "size": "Medium"
+              },
+              {
+                "type": "TextBlock",
+                "text": "- Email notification to schedule an Intake (Orientation)\n- _Don't forget to check your [Toromail](http://toromail.csudh.edu/) account_"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "For More Information",
+      "weight": "Bolder",
+      "size": "Medium"
+    },
+    {
+      "type": "TextBlock",
+      "text": "You may also view our video tutorials. You can find our step-by-step guides on our [YouTube channel here.](https://www.youtube.com/channel/UCJ3XMHbYOEs1Gffya4rjwzg) You can also find the channel by searching “sdrc csudh” in the YouTube search engine. Our page is titled **SdRC CSUDH.**",
+      "wrap": true
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
