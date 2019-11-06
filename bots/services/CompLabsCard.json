@@ -1,0 +1,87 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Graduate Lab",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "Lab Location: LIB C522\nExtension: 2417\n\nLab Specifications:\n\nHardware\n- Model: (9) HP Elite Desk 800 G1\n- Model: (5) Dell Optiplex 990\n",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Cluster Lab",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "\n\nLab Location: SAC 2102\n\nExtension: ----\n\nLab Specifications:\n\nHardware – 40 Computers\n- Model: Lenovo Desktop\n\nSoftware\n- Microsoft Windows 7 Enterprise\n- Microsoft Office 2016\n- Microsoft Visio 2016\n- Microsoft Project 2016\n- Microsoft Visual Studio 2017\n- SUN Java SDK\n- Eclipse IDE\n- SUN Net Beans IDE\n- BlueJ Java IDE\n- VMWare Workstation\n",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Linux Instructional Lab",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "\n\nLab Location: NSM B208\n\nExtension: 2036\n\nLab Specifications:\n\nHardware – 23 Computers\n- Model: HP Elite Desk 800 G1\n\nSoftware:\n- Debian 9.x (Stretch) Linux Operating System\n- LibreOffice\n- SUN Java SDK\n- SUN Net Beans IDE\n- Eclipse IDE\n- BlueJ Java IDE\n- Mathematica\n",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Windows Instructional Lab",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "\n\nLab Location: SCC 800\n\nExtension: 2755\n\nLab Specifications:\n\nHardware – 40 Computers\n- Model: HP Elite Desk 800 G1\n\nSoftware:\n- Microsoft Windows 7 Enterprise\n- Microsoft Office 2016\n- Microsoft Visio 2016\n- Microsoft Project 2016\n- Microsoft Visual Studio 2017\n- SUN Java SDK\n- SUN Net Beans IDE\n- Eclipse\n- BlueJ Java IDE\n- VMWare Workstation\n",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

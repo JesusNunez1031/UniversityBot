@@ -1,0 +1,160 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Major Requirements",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Upper Division Requirements",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "A minimum of 18 upper division units, out of the 36 needed, in the major must be taken in residence at CSU Dominguez Hills.\n1. Core Requirements (12 units)\n\n- CSC 311 Data Structures (3)\n- CSC 321 Programming Languages (3)\n- CSC 331 Computer Organization (3)\n- CSC 341 Operating Systems (3)\n\n2. Required Courses (18 units)\n \n- CSC 301 Computer and Society (3)\n- CSC 401 Analysis of Algorithms (3)\n- CSC 481 Software Engineering (3)\n- CSC 492 Senior Project (3)\n- MAT 321 Probability and Statistics (3)\n- MAT 361 Finite Automata (3)\n\n3. Electives: Select two courses from the following (6 units):\n\n- CSC 395 Special Topics (3)\n- CSC 411 Artificial Intelligence (3)\n- CSC 421 Advanced Programming Languages (3) [I]\n- CSC 431 Advanced Computer Organization (3)\n- CSC 441 Advanced Operating Systems (3) [I]\n- CSC 451 Computer Networks (3)\n- CSC 453 Data Management (3)\n- CSC 455 World Wide Web Design and Management (3)\n- CSC 461 Computer Graphics I (3)\n- CSC 463 Computer Graphics II (3) [I]\n- CSC 471 Compiler Construction (3)\n- CSC 490 Senior Seminar (3)\n- MAT 367 Numerical Analysis I (3)\n- MAT 369 Numerical Analysis II (3) [I]",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Lower Division Requirements",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "A total of 40 units:\n\n- CSC 121 Introduction to Computer Science and Programming I (4)\n- CSC 123 Introduction to Computer Science and Programming II (4)\n- CSC 221 Assembly Language and Introduction to Computer Organization (3)\n- CSC 2XX Lower Division Computer Science Elective (3)\n- MAT 191 Calculus I (5)\n- MAT 193 Calculus II (5)\n- MAT 271 Foundations of Higher Mathematics (3)\n- MAT 281 Discrete Mathematics (3)\n- PHY 130 General Physics I (5)\n- PHY 132 General Physics II (5)",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.ShowCard",
+                    "title": "Additional Requirements",
+                    "card": {
+                      "type": "AdaptiveCard",
+                      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                      "body": [
+                        {
+                          "type": "TextBlock",
+                          "text": "Students entering the Computer Science program must complete the following.\n\n1. Earn an overall grade point average of 2.0 or better in courses taken outside of the department.\n\n2. Earn a grade of “C” or better in each course taken within the department.\n\n3. Earn a grade of “C” or better in all direct and indirect prerequisite courses listed in the catalog before advancing to the next level course in a sequence for English, Mathematics, and Science courses.\n\n4. Students must take capstone course CSC 492 at CSUDH.\nThe following courses, or their approved transfer equivalents, are required of all candidates for this degree.",
+                          "wrap": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Minor Requirements",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "Single field major, no minor required."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Graduation Writing Assessment Requirement",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "See the “Graduation Writing Assessment Requirement” in the University Catalog."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "General Education Requirements",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "See the “General Education” requirements in the University Catalog or the Class Schedule for the most current information on General Education requirements and course offerings.",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Elective Requirements",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "Completion of elective courses (beyond the requirements listed below) to reach a total of a minimum of 120.",
+                "wrap": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

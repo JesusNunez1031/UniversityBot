@@ -9,6 +9,11 @@ const FinAidCard = require('./services/FinancialAid.json');
 const contactCard = require('./services/contactCard.json');
 const Colleges = require('./services/Colleges.json');
 const DisabilityCard = require('./services/DisabilityCard.json');
+const csPloCard = require('./services/csPloCard.json');
+const BSCSReqCard = require('./services/BSCSReqCard.json');
+const BACTReqCard = require('./services/BACTReqCard.json');
+const CompLabsCard = require('./services/CompLabsCard.json');
+const FacultyCard = require('./services/FacultyCard.json');
 
 class QnABot extends ActivityHandler {
     /**
@@ -76,6 +81,26 @@ class QnABot extends ActivityHandler {
             }
             if (qnaResults[0].answer === 'Above you will find information on the resources available at CSUDH for students with disabilities.') {
                 await context.sendActivity({ attachments: [CardFactory.adaptiveCard(DisabilityCard)] });
+            }
+
+            if (qnaResults[0].answer === 'Above you can see more information regarding the PLO of the different programs') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(csPloCard)] });
+            }
+
+            if (qnaResults[0].answer === 'Above you can see the course requirements to get a Bachelor of Science in Computer Science. Please see the “Requirements for the Bachelor’s Degree” in the University Catalog for complete details on general degree requirements') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(BSCSReqCard)] });
+            }
+
+            if (qnaResults[0].answer === 'Above you can see the course requirements to get a Bachelor of Arts in Computer Technology. Please see the “Requirements for the Bachelor’s Degree” in the University Catalog for complete details on general degree requirements') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(BACTReqCard)] });
+            }
+
+            if (qnaResults[0].answer === 'Above you can see a list of the faculty of the Computer Science Department along with some contact information') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(FacultyCard)] });
+            }
+
+            if (qnaResults[0].answer === 'Above you can see more information regarding the computer labs available in CSUDH') {
+                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(CompLabsCard)] });
             }
             // If an answer was received from QnA Maker, send the answer back to the user.
             if (qnaResults[0]) {
