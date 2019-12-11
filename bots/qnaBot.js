@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 const { ActivityHandler, CardFactory } = require('botbuilder');
-const { QnAMaker } = require('botbuilder-ai');
+const { QnAMaker, LuisRecognizer } = require('botbuilder-ai');
 const WelcomeCard = require('./services/WelcomeCard.json');
 const CADreamAct = require('./services/CADreamAct.json');
 const FinAidCard = require('./services/FinancialAid.json');
@@ -14,28 +14,34 @@ const BSCSReqCard = require('./services/BSCSReqCard.json');
 const BACTReqCard = require('./services/BACTReqCard.json');
 const CompLabsCard = require('./services/CompLabsCard.json');
 const FacultyCard = require('./services/FacultyCard.json');
-
 class QnABot extends ActivityHandler {
     /**
      * @param {any} logger object for logging events, defaults to console if none is provided
      */
     constructor(logger) {
         super();
+        const dispatchRecognizer = new LuisRecognizer({
+            applicationId: process.env.LuisAppId,
+            endpointKey: process.env.LuisAPIKey,
+            endpoint: `https://${ process.env.LuisAPIHostName }.api.cognitive.microsoft.com/`
+        }, {
+            includeAllIntents: true,
+            includeInstanceData: true
+        }, true);
         if (!logger) {
             logger = console;
             logger.log('[QnaMakerBot]: logger not passed in, defaulting to console');
         }
-
         try {
             var endpointHostName = process.env.QnAEndpointHostName;
             if (!endpointHostName.startsWith('https://')) {
                 // eslint-disable-next-line no-mixed-spaces-and-tabs,no-tabs
-		    endpointHostName = 'https://' + endpointHostName;
+                endpointHostName = 'https://' + endpointHostName;
             }
 
             if (!endpointHostName.endsWith('/qnamaker')) {
                 // eslint-disable-next-line no-mixed-spaces-and-tabs,no-tabs
-		    endpointHostName = endpointHostName + '/qnamaker';
+                endpointHostName = endpointHostName + '/qnamaker';
             } this.qnaMaker = new QnAMaker({
                 knowledgeBaseId: process.env.QnAKnowledgebaseId,
                 endpointKey: process.env.QnAAuthKey,
@@ -45,6 +51,8 @@ class QnABot extends ActivityHandler {
             logger.warn(`QnAMaker Exception: ${ err } Check your QnAMaker configuration in .env`);
         }
         this.logger = logger;
+
+        this.dispatchRecognizer = dispatchRecognizer;
 
         // If a new user is added to the conversation, send them a greeting message
         this.onMembersAdded(async (context, next) => {
@@ -65,13 +73,46 @@ class QnABot extends ActivityHandler {
 
             const qnaResults = await this.qnaMaker.getAnswers(context);
 
+            // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use
+            const recognizerResult = await dispatchRecognizer.recognize(context);
+
+            // Top intent tell us which cognitive service to use.
+            const intent = LuisRecognizer.topIntent(recognizerResult);
+
+            switch (intent) {
+            case 'Financial_Aid':
+                // const result = recognizerResult.luisResult.connectedServiceResult;
+                // const intentI = result.topScoringIntent.intent;
+                await context.sendActivity(`Entities: ${ recognizerResult.luisResult.entities.entity }.`);
+                if (recognizerResult.luisResult.entities === 'Application_steps') {
+                    await context.sendActivity({ attachments: [CardFactory.adaptiveCard(FinAidCard)] });
+                }
+                if (recognizerResult.luisResult.entities === 'CA_Dream_Act_Info') {
+                    await context.sendActivity({ attachments: [CardFactory.adaptiveCard(CADreamAct)] });
+                }
+                break;
+            case 'Computer Science':
+                await context.sendActivity(`Entities: ${ recognizerResult.luisResult.entities.entity }.`);
+                if (recognizerResult.luisResult.entities === 'CS_Lab') {
+                    await context.sendActivity({ attachments: [CardFactory.adaptiveCard(CompLabsCard)] });
+                }
+                if (recognizerResult.luisResult.entities === 'BACT_Requirements') {
+                    await context.sendActivity({ attachments: [CardFactory.adaptiveCard(BACTReqCard)] });
+                }
+                break;
+            default:
+                console.log(`Dispatch unrecognized intent: ${ intent }.`);
+                await context.sendActivity(`Dispatch unrecognized intent: ${ intent }.`);
+                break;
+            }
+
             if (qnaResults[0].answer === 'Above you can see information regarding the California Dream Act.') {
                 await context.sendActivity({ attachments: [CardFactory.adaptiveCard(CADreamAct)] });
             }
 
-            if (qnaResults[0].answer === 'Here are the steps to applying for Financial Aid:') {
-                await context.sendActivity({ attachments: [CardFactory.adaptiveCard(FinAidCard)] });
-            }
+            // if (qnaResults[0].answer === 'Here are the steps to applying for Financial Aid:') {
+            // await context.sendActivity({ attachments: [CardFactory.adaptiveCard(FinAidCard)] });
+            // }
 
             if (qnaResults[0].answer === 'Above you can see information for contacting various school departments.') {
                 await context.sendActivity({ attachments: [CardFactory.adaptiveCard(contactCard)] });

@@ -62,7 +62,7 @@
       "actions": [
         {
           "type": "Action.ShowCard",
-          "title": "Campus Calender",
+          "title": "Campus Calendar",
           "card": {
             "type": "AdaptiveCard",
             "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -72,7 +72,7 @@
                 "actions": [
                   {
                     "type": "Action.OpenUrl",
-                    "title": "Loker Student Union and Student Life Calender",
+                    "title": "Loker Student Union and Student Life Calendar",
                     "url": "http://ems.csudh.edu/mastercalendar/MasterCalendar.aspx"
                   }
                 ]
